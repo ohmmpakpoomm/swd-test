@@ -1,0 +1,112 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.middleItem {
+  display: flex;
+}
+
+.box {
+  width: 280px;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.box:hover {
+  background-color: orange;
+  transition-duration: 300ms;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-right: 80px solid #555;
+  border-bottom: 40px solid transparent;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #555;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 80px solid #555;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-left: 80px solid #555;
+  border-bottom: 40px solid transparent;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.oval {
+  height: 80px;
+  width: 160px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.trapezoid {
+  border-bottom: 80px solid #555;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 160px;
+}
+
+.rectangle {
+  height: 80px;
+  width: 220px;
+  background-color: #555;
+}
+
+.parallelogram {
+  width: 190px;
+  height: 80px;
+  transform: skew(20deg);
+  background: #555;
+}
+
+.square {
+  height: 80px;
+  width: 80px;
+  background-color: #555;
+}
+
+.itemWrapper {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}

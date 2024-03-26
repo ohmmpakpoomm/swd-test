@@ -14,11 +14,11 @@ export default function Homepage() {
           <span className="title">{t("Test")} 1</span>
           <small>{t("Layout & Style")}</small>
         </Link>
-        <Link to="/question2" className="item">
+        <Link to="/" className="item">
           <span className="title">{t("Test")} 2</span>
           <small>{t("Connect API")}</small>
         </Link>
-        <Link to="/question1" className="item">
+        <Link to="/question2" className="item">
           <span className="title">{t("Test")} 3</span>
           <small>{t("Form & Table")}</small>
         </Link>
