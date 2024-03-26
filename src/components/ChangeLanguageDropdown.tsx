@@ -1,5 +1,6 @@
 import { Dropdown, Button } from "antd";
 import type { MenuProps } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import i18n from "../utils/i18n";
 
@@ -14,18 +15,20 @@ export default function ChangeLanguageDropdown() {
 
   const items: MenuProps["items"] = [
     {
-      label: <span onClick={() => hdlChangeLang("en")}>{t("English")}</span>,
+      label: <span onClick={() => hdlChangeLang("en")}>{t("EN")}</span>,
       key: "English",
     },
     {
-      label: <span onClick={() => hdlChangeLang("th")}>{t("Thai")}</span>,
+      label: <span onClick={() => hdlChangeLang("th")}>{t("TH")}</span>,
       key: "Thai",
     },
   ];
   return (
     <div className="dropdown">
       <Dropdown menu={{ items }} placement="bottomRight">
-        <Button>{t("Language")}</Button>
+        <Button>
+          {t("Language")} <DownOutlined />
+        </Button>
       </Dropdown>
     </div>
   );
