@@ -1,6 +1,7 @@
 import { Row, Col } from "antd";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import ChangeLanguageDropdown from "../components/ChangeLanguageDropdown";
 import "./Question1.scss";
@@ -43,7 +44,9 @@ export default function Question1() {
   return (
     <div className="container">
       <ChangeLanguageDropdown />
-      <h1>{t("Layout & Style")}</h1>
+      <h1>
+        <Link to="/">{t("Layout & Style")}</Link>
+      </h1>
       <div className="buttonWrapper">
         <div className="box" onClick={hdlClickLeft}>
           <div className="triangle-left"></div>
@@ -60,6 +63,7 @@ export default function Question1() {
           <div className="triangle-right"></div>
           <small>{t("Move shape")}</small>
         </div>
+        L
       </div>
       <div className="itemWrapper">
         <Row justify="end" gutter={16} style={{ width: "1200px" }}>
