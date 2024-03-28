@@ -13,16 +13,38 @@
 
 .middleItem {
   display: flex;
+  justify-content: center;
+  position: relative;
+  small {
+    position: absolute;
+    bottom: -10px;
+    background-color: #6eda78;
+    padding: 0px 8px;
+    border-radius: 8px;
+    color: white;
+    z-index: 1;
+  }
 }
 
 .box {
-  width: 280px;
+  min-width: 280px;
   height: 120px;
+  padding: 0 24px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 120px;
   border-radius: 8px;
+  position: relative;
+  small {
+    position: absolute;
+    bottom: -10px;
+    background-color: #6eda78;
+    padding: 0px 8px;
+    border-radius: 8px;
+    color: white;
+  }
 }
 .box:hover {
   background-color: orange;

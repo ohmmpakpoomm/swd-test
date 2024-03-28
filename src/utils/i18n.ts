@@ -11,6 +11,8 @@ const resources = {
       "Layout & Style": "Layout & Style",
       "Connect API": "Connect API",
       "Form & Table": "Form & Table",
+      "Move shape": "Move shape",
+      "Move position": "Move position",
     },
   },
   th: {
@@ -22,6 +24,8 @@ const resources = {
       "Layout & Style": "การจัดการหน้าเว็บ",
       "Connect API": "การเชื่อมต่อ API",
       "Form & Table": "การจัดการหน้าฟอร์ม",
+      "Move shape": "เลื่อนรูปแบบ",
+      "Move position": "เปลี่ยนตำแหน่ง",
     },
   },
 };
