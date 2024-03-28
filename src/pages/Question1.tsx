@@ -63,7 +63,6 @@ export default function Question1() {
           <div className="triangle-right"></div>
           <small>{t("Move shape")}</small>
         </div>
-        L
       </div>
       <div className="itemWrapper">
         <Row justify="end" gutter={16} style={{ width: "1200px" }}>
