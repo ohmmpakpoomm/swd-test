@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .formWrapper {
@@ -17,4 +18,19 @@
 .rowWrapper {
   display: flex;
   gap: 16px;
+}
+
+.space {
+  display: flex;
+  gap: 40px;
+}
+
+.tableWrapper {
+  margin-top: 16px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+h1 {
+  width: 100%;
 }
