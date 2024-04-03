@@ -76,22 +76,7 @@ export default function Question2() {
     setData([...data, values]);
   };
 
-  interface DataType {
-    key: string;
-    prefix: string;
-    firstName: string;
-    lastName: string;
-    birthday: string;
-    nationality: string;
-    nationalId: string;
-    gender: string;
-    phone: string;
-    passport: string;
-    salary: string;
-    fullName: string;
-  }
-
-  const columns: TableColumnsType<DataType> = [
+  const columns: TableColumnsType<FormType> = [
     {
       title: t("Name"),
       dataIndex: "fullName",
@@ -129,7 +114,7 @@ export default function Question2() {
 
   const deleteSelected = () => {
     const newData = data.filter(
-      (el: DataType) => !selectedRowKeys.includes(el.key)
+      (el: FormType) => !selectedRowKeys.includes(el.key)
     );
     localStorage.setItem("data", JSON.stringify(newData));
     setData(newData);
